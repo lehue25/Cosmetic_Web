@@ -1,0 +1,28 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 491-850-182
+DEBUG:root:Username: 11218461
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:02] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/header/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/header/phone.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/home/banner.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/home/girl.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/home/icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/header/search.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/star.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/policy.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/styles/app.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/styles/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/header/cart.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/header/user.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/Facebook.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/Instagram.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/LinkedIn.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/Twitter.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/images/footer/WhatsApp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/styles/home.css.map HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:05] "[36mGET /static/styles/app.css.map HTTP/1.1[0m" 304 -
+DEBUG:root:Username: 11218461
+INFO:werkzeug:127.0.0.1 - - [04/Apr/2024 01:58:20] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\HP\\Documents\\DeAn\\Shifinycopy\\app.py', reloading

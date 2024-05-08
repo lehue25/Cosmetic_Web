@@ -1,0 +1,41 @@
+extends ./views/layout/_dashboard
+append stylesheet
+block title
+    title Shifiny - Contact
+block main
+    .home-wrapper
+        .contact-banner
+                img(src="../static/images/contact/banner.png").contact-banner-img
+        h2.main-title Contact Us
+        .contact-methods
+            +contactMethod("../static/images/contact/phone.png", "Phone","+8324928959")
+            +contactMethod("../static/images/contact/location.png", "Address","Hanoi, Vietnam")
+            +contactMethod("../static/images/contact/time.png", "Time","7:00 - 23: 00")
+            +contactMethod("../static/images/contact/mail.png", "Email","huele2512@gmail.com")
+        .contact-ad
+            img(src="../static/images/contact/banner2.png" alt="banner").contact-ad-banner
+            .contact-ad-content 
+                p.contact-ad-des For lashes and brows that appear longer and fuller, use the LiLash® serum. Shop today. Physician Formulated, Ophthalmologist Tested. Safe For Sensitive Eyes.
+                .contact-ad-details
+                    .contact-ad-item
+                        img(src="../static/images/contact/sale.png", alt="good price").contact-ad-icon
+                        p.contact-ad-detail Giá cả hợp lý
+                    .contact-ad-item
+                        img(src="../static/images/contact/auth.png", alt="good price").contact-ad-icon
+                        p.contact-ad-detail Sản phẩm chính hãng
+                    .contact-ad-item
+                        img(src="../static/images/contact/delivery.png", alt="good price").contact-ad-icon
+                        p.contact-ad-detail Giao hàng nhanh
+        h2.main-title Leave Message
+        .contact-form
+            .form-top
+                form.form-top-left
+                    input.name-input(type="text" placeholder="Your Name")
+                form.form-top-right
+                    input.name-input(type="email" placeholder="Your Email" id="email" name="email" required)
+            .form-bottom
+                form
+                input.name-input-bottom(type="text" placeholder="Your Message")
+            button.button.mg-at SEND MESSAGE
+        include ./views/module/_login
+        include ./views/module/_register

@@ -1,0 +1,50 @@
+@use "../abstracts" as abst;
+.sidebar {
+  max-width: 245px;
+  & > ul > li {
+    font-size: 20px;
+    background-color: abst.$pink1;
+    white-space: nowrap;
+    padding: 22px 24px;
+    margin: 2px 0px;
+  }
+}
+//recent sidebar
+.review_sidebar {
+  max-width: 245px;
+  & > ul > li {
+    background-color: #fff;
+    margin: 2px 0px;
+  }
+}
+.img-recent {
+  width: 70px;
+  height: 100%;
+  border-radius: 8px;
+}
+.recent {
+  &-new {
+    &-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    &-des {
+      display: grid;
+    }
+    &-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    &-time {
+      font-size: 14px;
+      color: abst.$gray5;
+    }
+  }
+  &-list {
+    display: grid;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

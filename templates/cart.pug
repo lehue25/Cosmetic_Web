@@ -1,0 +1,75 @@
+extends ./views/layout/_dashboard
+append stylesheet 
+block title
+    title Shifiny - ProductDetail
+block main
+    include ./views/layout/_review_sidebar
+    .home-wrapper
+        .cart-main 
+            .h3-title Giỏ hàng của bạn
+            .cart-des
+                .cart-column 
+                    span.cart-title-column Sản phẩm
+                    .cart-item-details
+                        img(src="../static/images/productDetail/detail1.png")
+                        p.cart-item-des Son Thỏi Lì Merzy The First Lipstick #L4 Son Thỏi Lì Merzy The First Lipstick #L4Son Thỏi Lì Merzy The First Lipstick #L4
+                .cart-column 
+                    span.cart-title-column.cart-title-quantity Số lượng
+                    .cart-adjust-quantity
+                            button.decrease -
+                            p.quantity(data-price="300000") 1
+                            button.add +
+                .cart-column 
+                    span.cart-title-column Giá
+                    span.price-item 300000 đ
+            .total-price
+                span Tổng tiền
+                span.price-total 300000 đ
+        .infor-delivery
+            .h3-title Thông tin giao hàng
+            form#delivery
+                .form-group
+                label(for="fullName")
+                    input(type="text" class="delivery-input" name="fullName" placeholder="Họ và tên" required)
+
+                .form-group
+                label(for="tel")
+                    input(type="tel" class="delivery-input" name="phoneNumber" id="phoneNumberInput" placeholder="Số điện thoại" required)
+
+                .form-group
+                label(for="email")
+                    input(type="email" class="delivery-input" name="email" placeholder="Email" required)
+
+                .form-group
+                label(for="addres")
+                    input(type="text" class="delivery-input" name="city" placeholder="Tỉnh/Thành phố" required)  
+
+                .form-group
+                label(for="address")
+                    input(type="text" class="delivery-input" name="district" placeholder="Quận/Huyện" required)
+
+                .form-group
+                label(for="address")
+                    input(type="text" class="delivery-input" name="ward" placeholder="Xã/Phường" required)
+
+                .form-group
+                label(for="note")
+                    input(type="text" class="delivery-input" name="note" placeholder="Ghi chú" required)
+
+        .payment-methods
+            .h3-title Chọn phương thức thanh toán
+            ul
+                li.payment-method
+                    input(type="radio" id="cash" name="payment_method" value="cash" checked)
+                    img(src="../static/images/payment/casj.png" alt ="cash")
+                    label(for="cash") Thanh toán bằng tiền mặt
+                li.payment-method
+                    input(type="radio" id="momo" name="payment_method" value="momo")
+                    img(src="../static/images/payment/momo.png" alt="momo")
+                    
+                    label(for="momo") Thanh toán bằng MoMo
+                li.payment-method
+                    input(type="radio" id="vnpay" name="payment_method" value="vnpay")
+                    img(src="../static/images/payment/momo.png" alt="vnpay")
+                    label(for="vnpay") Thanh toán bằng VNPay
+        button.button.button-complete Hoàn tất

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shifiny - Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/styles/home.css" />
+    <link rel="stylesheet" href="../static/styles/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include '_header.html' %}
+      <div class="wrapper-body">
+        <main class="main">
+          <div class="main-container">
+            {% include '_sidebar_category.html' %}
+            <div class="home-wrapper">
+              <!-- <img class="banner" src="../static/images/home/banner.png" /> -->
+              <div class="home-content">
+                <div class="home-content-left">
+                  <p>
+                    Shifiny là hệ thống phân phối mỹ phẩm chính hãng uy tín và
+                    dịch vụ chăm sóc khách hàng tận tâm . Đến với chúng tôi bạn
+                    có thể hoàn toàn yên tâm khi sẽ chọn được cho mình bộ sản
+                    phẩm phù hợp và ưng ý từ các nhãn hàng nổi tiếng trên toàn
+                    thế giới.
+                  </p>
+                  <div class="home-content-direct">
+                    <button class="bg-red button">
+                      <a href="./products.html">Mua sắm</a>
+                    </button>
+                    <button class="button button-second" href="./contact.html">
+                      <a href="./contact.html">Chi tiết</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="home-content-right">
+                  <img src="../static/images/home/girl.png" alt="girl" />
+                </div>
+              </div>
+              <div class="home-condition-skin">
+                <div class="home-condition">
+                  <img class="icon" src="../static/images/home/icon.png" />
+                  <p>Da mụn</p>
+                </div>
+                <div class="home-condition">
+                  <img class="icon" src="../static/images/home/icon.png" />
+                  <p>Da khô</p>
+                </div>
+                <div class="home-condition">
+                  <img class="icon" src="../static/images/home/icon.png" />
+                  <p>Da dầu</p>
+                </div>
+                <div class="home-condition">
+                  <img class="icon" src="../static/images/home/icon.png" />
+                  <p>Da lão hóa</p>
+                </div>
+              </div>
+              <div class="explore-home">
+                <h3>Khám phá</h3>
+                <div class="explore-menu">
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Dưỡng ẩm"
+                      ><img
+                        class="menu-icon"
+                        src="https://seun.vn/media/news/2609_neutrogena-hydroboost-water-gel.jpg"
+                        alt="dưỡng ẩm"
+                      /><span class="menu-text">Dưỡng ẩm</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Son"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/OIP.ByfujJ4og53e0238mZXSowHaHG?rs=1&pid=ImgDetMain"
+                        alt="Son"
+                      /><span class="menu-text">Son</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Tẩy trang"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/R.23607a0ae50243d9983ffb56d2978aac?rik=k0uuRGKMtQ8Vyw&pid=ImgRaw&r=0"
+                        alt="Tẩy trang"
+                      /><span class="menu-text">Tẩy trang</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Dưỡng môi"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/OIP.2mz_LadiouvLSbLhugl7lwHaGx?rs=1&pid=ImgDetMain"
+                        alt="Dưỡng môi"
+                      /><span class="menu-text">Dưỡng môi</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Mặt nạ"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/OIP.nmdMjbjg9beIrJi5gaagEAHaHa?rs=1&pid=ImgDetMain"
+                        alt="Mặt nạ"
+                      /><span class="menu-text">Mặt nạ</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Trị mụn"
+                      ><img
+                        class="menu-icon"
+                        src="https://s3.images-iherb.com/smi/smi24276/l/2.jpg"
+                        alt="Trị mụn"
+                      /><span class="menu-text">Trị mụn</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Treatment"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/R.9c4b1a34316df94f8b87a6572c75cf0d?rik=F0Uwbb0hfg4RSQ&pid=ImgRaw&r=0"
+                        alt="Treatment"
+                      /><span class="menu-text">Treatment</span></a
+                    >
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-item-explore" href="/category/Chống nắng"
+                      ><img
+                        class="menu-icon"
+                        src="https://th.bing.com/th/id/R.96a93134d3bf92c72c55ebfbec280d7a?rik=Dh8%2flVIjYj%2bX%2fg&pid=ImgRaw&r=0"
+                        alt="Chống nắng"
+                      /><span class="menu-text">Chống nắng</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="forU-home">
+                <h3>Dành cho bạn</h3>
+                <div class="explore-forU">
+                  {% for item in table %}
+                  <div class="menu-item-forU">
+                    <div class="menu-item-forU" href="#">
+                      <img class="menu-icon" src="{{item[7]}}" alt="Mặt nạ" />
+                      <div class="menu-labels">
+                        <span class="menu-label-hot">🔥Hot</span
+                        ><span class="menu-label-freeship">Free ship</span>
+                      </div>
+                      <div class="menu-item-title">
+                        <span class="menu-item-name">{{item[0]}}</span
+                        ><span class="menu-item-discount">{{item[6]}}</span>
+                      </div>
+                      <div class="menu-item-des">
+                        <p>{{item[1]}}</p>
+                      </div>
+                      <div class="menu-item-detail gap35">
+                        {% set price = item[2] %} {% set formatted_price =
+                        "{:,.0f}".format(price).replace(",", ".") %}
+                        <p class="menu-item-price">{{ formatted_price }}đ</p>
+                        <a href="/product/{{item[18]}}"
+                          ><button class="button button-sale-detail">
+                            Chi tiết
+                          </button></a
+                        >
+                      </div>
+                      <div class="menu-item-quality">
+                        <img
+                          class="menu-item-rating"
+                          src="../static/images/star.png"
+                          alt="rating"
+                        />
+                        <div class="menu-item-sold">2.4k đã bán</div>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="trending-home">
+                <h3>Nổi bật</h3>
+                <div class="trending-items">
+                  {% for item in featured %}
+                  <div class="menu-item-forU">
+                    <div class="menu-item-forU menu-item-trending" href="#">
+                      <img class="menu-icon" src="{{ item[7] }}" alt="Mặt nạ" />
+                      <div class="menu-item-title">
+                        <span class="menu-item-name">{{ item[0] }}</span>
+                      </div>
+                      <div class="menu-item-des">
+                        <p>{{ item[1] }}</p>
+                      </div>
+                      <div class="menu-item-detail">
+                        {% set price = item[2] %} {% set formatted_price =
+                        "{:,.0f}".format(price).replace(",", ".") %}
+                        <p class="menu-item-price">{{ formatted_price }}đ</p>
+                      </div>
+                      <div class="menu-item-quality">
+                        <img
+                          class="menu-item-rating"
+                          src="../static/images/star.png"
+                          alt="rating"
+                        />
+                        <a href="/product/{{item[18]}}"
+                          ><button class="button button-sale-detail">
+                            Chi tiết
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <!-- Modal Đăng nhập-->
+              <div class="modal" id="loginModal">
+                <!-- Nội dung modal-->
+                <div class="modal-content">
+                  <i class="fa fa-times close" aria-hidden="true"></i>
+                  <h2 class="label-name">Đăng nhập</h2>
+                  <form id="loginForm" method="POST" action="/login">
+                    <div class="form-group">
+                      <label for="username"></label>
+                      <input
+                        class="username"
+                        type="text"
+                        name="username"
+                        placeholder="Tên đăng nhập"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password"></label>
+                      <input
+                        class="username"
+                        type="password"
+                        name="password"
+                        placeholder="Mật khẩu"
+                        required
+                      /><a class="forgot-pass">Bạn quên mật khẩu?</a>
+                    </div>
+                    <button class="button button-login-regist" type="submit">
+                      Đăng nhập
+                    </button>
+                  </form>
+                  <div class="create-acc">
+                    <h3>Chưa có tài khoản?</h3>
+                    <button class="button-switch">Đăng ký</button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal" id="registerModal">
+                <div class="modal-content">
+                  <i class="fa fa-times close" aria-hidden="true"></i>
+                  <h2 class="label-name">Tạo tài khoản</h2>
+                  <form id="registerForm" method="POST" action="/register">
+                    <div class="form-group">
+                      <label for="fullName"></label>
+                      <input
+                        class="username"
+                        type="text"
+                        name="username"
+                        placeholder="Họ và tên"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="birthDate"></label>
+                      <input
+                        class="username"
+                        type="text"
+                        name="date_of_birth"
+                        id="birthDateInput"
+                        placeholder="Ngày, tháng, năm sinh"
+                        required
+                        onfocus="showDatePicker()"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email"></label>
+                      <input
+                        class="username"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phoneNumber"></label>
+                      <input
+                        class="username"
+                        type="tel"
+                        name="phone_number"
+                        placeholder="Số điện thoại"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password"></label>
+                      <input
+                        class="username"
+                        type="password"
+                        name="password"
+                        placeholder="Mật khẩu"
+                        required
+                      />
+                    </div>
+                    <button class="button button-login-regist" type="submit">
+                      Đăng ký
+                    </button>
+                  </form>
+                  <div class="create-acc">
+                    <h3>Bạn đã có tài khoản?</h3>
+                    <button
+                      class="button-switch"
+                      type="button"
+                      id="switchToLoginBtn"
+                    >
+                      Đăng nhập
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      {% include '_footer.html' %}
+    </div>
+    <script src="../static/js/main.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <scrip
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></scrip>
+    <scrip
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></scrip>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<div class="header">
+  <div class="topheader">
+    <div class="logo">
+      <img class="img-logo" src="../static/images/header/logo.png" alt="logo" />
+      <div class="name">
+        <p>Shifiny Cosmetic</p>
+      </div>
+    </div>
+    <div class="right-header">
+      <form method="POST" action="/search">
+        <button
+          type="submit"
+          class="search-action"
+          href="{{url_for('search')}}"
+        >
+          <img
+            class="search-icon"
+            src="../static/images/header/search.png"
+            alt="search"
+          />
+        </button>
+        <input
+          class="search-input"
+          type="text"
+          name="searchInput"
+          placeholder="Search"
+        />
+      </form>
+
+      <div class="cart">
+        {% if session.logged_in %}
+        <form method="POST" action="/cart/{{session.user_id}}">
+          {% endif %}
+          <button class="button-cart" onclick="checkLoggedIn()">
+            <img src="../static/images/header/cart.png" alt="cart" />
+          </button>
+        </form>
+      </div>
+      {% if session.logged_in %}
+      <div class="user dropdown" id="">
+        <a class="header-action dropbtn hover-white" href="">
+          <img src="../static/images/header/user.png" alt="user" />
+          <p class="">{{session.username }}</p>
+          <div class="dropdown-content">
+            <a href="/user/{{ session.user_id }}">Thông tin cá nhân</a>
+            <a href="/orders">Đơn hàng</a>
+            <a href="/logout">Log out</a>
+          </div>
+        </a>
+        <!-- #tạo dropdown để hiển thị thông tin cá nhân và logout (tạo trang mới cho href="inf_user")  -->
+
+        <!-- <a href="inf_user">Thoong tin ca nhan</a> -->
+      </div>
+      {% else%}
+      <div class="user" id="loginBtn">
+        <a class="header-action"
+          ><img src="../static/images/header/user.png" alt="user"
+        /></a>
+        <p class="log-in">Log in</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="navbar">
+    <a class="hotline">
+      <img
+        class="img-logo"
+        src="../static/images/header/phone.png"
+        alt="logo"
+      />
+      <p>: 1900 636 510</p></a
+    >
+    <ul class="pages">
+      <a href="{{ url_for('index') }}">Trang chủ</a
+      ><a href="{{ url_for('product') }}">Sản phẩm </a
+      ><a href="{{ url_for('review') }}">Blog</a
+      ><a href="{{ url_for('contact') }}">Liên hệ</a>
+    </ul>
+  </div>
+</div>
+<script>
+  // Kiểm tra xem có thông báo cần hiển thị không
+  var message = "{{ message_need_login }}";
+  if (message) {
+    // Hiển thị hộp thoại thông báo
+    alert(message);
+  }
+</script>

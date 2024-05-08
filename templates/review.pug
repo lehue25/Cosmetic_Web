@@ -1,0 +1,44 @@
+extends ./views/layout/_dashboard
+append stylesheet 
+block title
+    title Shifiny - ProductDetail
+block main
+    include ./views/layout/_review_sidebar
+    .home-wrapper
+        .reviewer-list
+            .h3-title Reviewer
+            ul.host-list 
+                each user in [{name:"Thomas",desc:"Psychologist (UK)",color:"#FFBAA5"},{name:"Darrell",desc:"Psychologist (UK)",color:"#FFD381"},{name:"Arlene",desc:"Psychologist (UK)",color:"#B6AEE9"},{name:"Kristin",desc:"Psychologist (UK)",color:"#FFB5CD"},{name:"Courtney",desc:"Psychologist (UK)",color:"#FFE2AB"},{name:"Thomas",desc:"Psychologist (UK)",color:"#FFBAA5"}]
+                    li.host-item 
+                        .host-avt(style=`background-color: ${user.color};border: 1px solid ${user.color}`)
+                            img(src="../static/images/review/image.png" alt ="host_user")
+                        span.host-name=user.name
+                        span.host-desc=user.desc
+        .review-noteworthy
+            .h3-title Nổi bật
+            .trending 
+                .trending-banner
+                    .trending-content 
+                        h3.trending-title
+                            span UX Design 
+                            | Process: Mental Modeling Framework.
+                        p.trending-podcast Podcast Episode - 1
+                        p.trending-author
+                            |Thomas L. Fletcher 
+                            span.trending-author-position ( Product Design at UIUH )     
+                        button.button.button-primary 
+                            span Details
+                    .trending-img
+                        img(src="../static/images/home/girl.png" alt="Girl")
+                    .trending-circle
+                        img(src="../static/images/review/frame.png")
+        .review-news
+            .h3-title Nổi bật
+            .review-list
+                +reviewPost() 
+                +reviewPost() 
+                +reviewPost() 
+                +reviewPost() 
+                +reviewPost() 
+        include ./views/module/_login
+        include ./views/module/_register

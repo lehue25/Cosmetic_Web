@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+.wrapper {
+  margin: 0 auto;
+  @include rs {
+    grid-template-columns: auto;
+    padding: 0 24px;
+  }
+  @include md-dt {
+    grid: none;
+  }
+  &-body {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 1073px;
+    @include rs {
+      grid-template-columns: auto;
+      padding: 0 24px;
+    }
+    @include md-dt {
+      grid: none;
+    }
+  }
+}
+.main-container {
+  padding-inline: 37px;
+  margin-bottom: 81px !important;
+  display: flex;
+  gap: 85px;
+  margin: auto;
+}
+.h3-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 0 24px;
+}
+.mg-at {
+  margin: auto;
+}
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: auto;
+}
+.no-b-sh {
+  box-sizing: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mg-bt-30 {
+  margin-bottom: 30px;
+}

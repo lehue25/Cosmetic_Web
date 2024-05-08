@@ -1,0 +1,168 @@
+mixin menuItem(img='../static/images/home/item1.png', href = '#', text= "Mặt nạ")    
+    .menu-item 
+            a.menu-item-explore(href= href)
+                img(src=img, alt=text).menu-icon
+                span.menu-text= text
+mixin menuItemForU(img='../static/images/home/forU1.png', href = '#', text= "Mặt nạ", name="FINO", discount="-25%", des="Kem Ủ Tóc Dưỡng Ẩm, Hỗ Trợ Cải Thiện Tóc Hư Tổn Fino Premium Touch 230g", price="21,900₫", sold="2.4k")    
+    .menu-item-forU 
+            .menu-item-forU(href= href)
+                img(src=img, alt=text).menu-icon
+                .menu-labels
+                    span.menu-label-hot 🔥Hot
+                    span.menu-label-freeship Free ship
+                .menu-item-title 
+                    span.menu-item-name=name
+                    span.menu-item-discount=discount
+                .menu-item-des
+                    p=des
+                .menu-item-detail 
+                    p.menu-item-price=price
+                    button.button.button-sale-detail Chi tiết
+                .menu-item-quality
+                    img(src="../static/images/star.png",alt="rating").menu-item-rating
+                    .menu-item-sold=sold + " đã bán"
+mixin menuItemTrending(img='../static/images/home/trending1.png', href = '#', text= "Mặt nạ", name="FINO", discount="-25%", des="Kem Ủ Tóc Dưỡng Ẩm, Hỗ Trợ Cải Thiện Tóc Hư Tổn Fino Premium Touch 230g", price="21,900₫", sold="2.4k")    
+    .menu-item-forU 
+            .menu-item-forU.menu-item-trending(href= href)
+                img(src=img, alt=text).menu-icon
+                .menu-item-title 
+                    span.menu-item-name=name
+                .menu-item-des
+                    p=des
+                .menu-item-detail 
+                    p.menu-item-priceprice
+                .menu-item-quality
+                    img(src="../static/images/star.png",alt="rating").menu-item-rating
+                    button.button.button-sale-detail Chi tiết
+mixin menuItemSale(img="../static/images/products/product1.png", alt="prd", name = "Mặt nạ", price ="123.000 đ", priceO="159.000 đ")
+    .menu-item-sale
+        img(src=img, alt=alt).menu-item-sale-img
+        .menu-item-title
+            .menu-item-name=name
+            a
+                img(src="../static/images/products/cart.png", alt=alt).menu-item-sale-img
+        .menu-item-price
+            p.menu-item-price-new=price
+            p.menu-item-price-off=priceO
+        button.button.button-sale-detail Chi tiết
+mixin menuItemProduct(img="../static/images/products/product2.png", alt="prd", name = "Son", des="Kem Ủ Tóc Dưỡng Ẩm, Hỗ Trợ Cải Thiện Tóc Hư Tổn Fino Premium Touch 230g",price ="123.000 đ", sold="10.2k ")
+    .menu-item-product
+        img(src=img, alt=alt).menu-item-product-img
+        .menu-item-title
+            .menu-item-name=name
+            a
+                img(src="../static/images/products/cart.png", alt=alt).menu-item-sale-img
+        p.menu-item-des=des 
+        .menu-item-detail 
+                    p.menu-item-price=price
+                    button.button.button-sale-detail Chi tiết
+        .menu-item-quality
+                    img(src="../static/images/star.png",alt="rating").menu-item-rating
+                    .menu-item-sold=sold + " đã bán"
+
+mixin itemDetail(src="../static/images/productDetail/detail1.png", des="Son Tint Lì Romand Juicy Lasting Tint là son tint thuộc thương hiệu Romand với chất son trong trẻo, tạo hiệu ứng căng mọng tự nhiên cho đôi môi, màu son duy trì trong nhiều giờ liền cho bạn cảm giác bờ môi sáng bóng, căng mọng và ngọt ngào.", price="299.000 đ", sold="1.3k")
+    .detail-top
+        img(src=src, alt="detail").img-detail
+        .detail-left
+            .detail-title
+                h3.h3-title [MÀU 1-33] Son Tint Lì Romand Juicy Lasting Tint 5.5g
+            .detail-des
+                p=des 
+            .detail-choose
+                p Chọn sản phẩm
+            ul.detail-options
+                li 
+                    a M01
+                li 
+                    a A01
+                li 
+                    a K01
+                li 
+                    a I0s1
+            .detail-price
+                p=price
+            .menu-item-bottom
+                    .menu-item-quality
+                        img(src="../static/images/star.png",alt="rating").menu-item-rating
+                        .menu-item-sold=sold + " đã bán"
+                    button.button.mg-at Thêm vào giỏ hàng
+    .detail-more
+        .detail-more-left
+            p
+                |• Đặc trưng: 
+                br
+                |- Son Tint Lì Romand Juicy Lasting Tint với thiết kế dạng thân trụ tròn có màu sắc trùng với màu son bên trong rất tiện lợi cho những cô nàng tìm màu son khi đang vội nhé
+                br
+                |- Đầu cọ son vát nhẹ giúp cho việc lấy son dễ dàng hơn, tránh vây son bên ngoài 
+                br
+                |- Kết cấu son dạng tint bóng khi lướt trên môi mang cảm giác tươi mát, không bị dính môi rất dễ chịu 
+                br
+                |- Vì là son tint nên có độ bám màu cao, giữ màu lâu mà không gây cảm giác nặng môi 
+                br
+                |- Lớp stain môi tạo cho đôi môi cảm giác căng mọng, đầy đặn quyến rũ dễ thương 
+                br
+                |- Hiện tại chúng tôi có các phiên bản và các bảng màu sau:
+                br
+                |Phiên bản Bare - Mood được lấy ý tưởng từ những trái cây tươi mát với 3 tông màu tươi tắn, trong trẻo, cùng với chất son tint mang đến cho bạn đôi môi căng mọng, rạng rỡ hơn.
+                br
+                |31 Bare Apricot: Màu hồng san hô
+                br
+                |2 Bare Berry Smoothie: Màu hồng quả mọng
+                br
+                |33 Bare Vine: Màu hồng Mauve
+                br
+                |Phiên bản Juicy Lasting Tint với chất son tint bóng, tạo hiệu ứng căng mọng tự nhiên cho đôi môi, màu son duy trì trong nhiều giờ liền cho bạn cảm giác bờ môi sáng bóng, căng mọng và ngọt ngào.
+                br
+                |01 Juicy Oh!: Màu của nước cam ép, tựa như một miếng cam tươi mát
+                br
+                |02 Ruby Red: Màu đỏ thẫm của quả bưởi mọng nước
+                br
+                |03 Summerscant: Màu đỏ thuần mang nét tươi mát của quả dưa hấu
+                br
+                |04 Dragon Pink: Tô điểm cho đôi môi với màu hồng độc đáo của quả thanh long
+                br
+                |05 Peach Me: Gam màu hồng đào khiến lòng thêm bồi hồi
+                br
+                |06 FigFig: Màu hồng đỏ đất dịu dàng
+                br
+                |07 Jujube: Màu đỏ đất MLBB thanh lịch
+                br
+                |08 Apple Brown: Màu cam nâu gạch mang đến sự ngọt ngào (5.3g)
+                br
+                |09 Litchi Coral: Màu san hô mềm mại
+                br
+                |10 Nudy Peanut: Màu cam nude đào nhẹ nhàng tinh tế
+                br
+                |11 Pink Pumpkin: Màu MLBB hồng đất phù hợp với mọi tông da
+                br
+                |12 Cherry Bomb: Màu đỏ Cherry mang chút bí ẩn và quyến rũ
+                br
+                |13 Eat Dotori: Màu đỏ nâu gạch ấm áp
+        .detail-more-right
+            img.detail-more-img(src="../static/images/productDetail/detail2.png" alt="detail")
+mixin contactMethod(src="../static/images/contact/phone.png", des="Phone",  content="Hanoi, VietNam")
+    .contact-method
+        img(src=src, alt= des).contact-method-icon
+        p.contact-method-des= des
+        p.contact-method-content= content
+
+mixin reviewPost(src="../static/images/review/reviewer.png",name ="Thomas L. Fletcher relesed a new episode ", time=" Jun 25th", srcmain="../static/images/review/OIP.jpg",title="UX Design Process: Mental Modeling Framework, How To & Tips",ctime="2 hours ago", brief="Nicole is a User Experience Designer passionate about technology startups, cars, education & music. Based in Los Angeles CA., she is a User Experience Designer @ Iconmobile, an award-winning mobile")
+    .reviewPost
+        .review-top
+            .review-top-left
+                img(src=src, alt ="reviewer").reviewer-avt
+                .review-post-inf
+                    p.review-name= name
+                    p.review-time= time 
+            .review-top-right
+                img(src="../static/images/review/share.png",alt="share").review-icon
+                img(src="../static/images/review/more.png",alt="more").review-icon
+        .review-main
+            img.review-img(src=srcmain, alt="img-review")
+            .review-content
+                .review-title=title 
+                .review-content-times
+                    img(src="../static/images/review/time.png" alt="time")
+                    span.review-content-time=ctime
+                p.review-content-brief= brief
+                button.button Chi tiết

@@ -1,0 +1,31 @@
+#registerModal.modal
+  .modal-content
+    i.fa.fa-times(aria-hidden="true").close
+    h2.label-name Tạo tài khoản
+    form#registerForm
+      
+        .form-group
+            label(for="fullName")
+            input(type="text", class="username", name="fullName", placeholder="Họ và tên", required)
+
+        .form-group
+            label(for="birthDate")
+            input(type="text", class="username", name="birthDate", id="birthDateInput", placeholder="Ngày, tháng, năm sinh", required, onfocus="showDatePicker()")
+
+
+        .form-group
+            label(for="email")
+            input(type="email", class="username", name="email", placeholder="Email", required)
+
+        .form-group
+            label(for="phoneNumber")
+            input(type="tel", class="username", name="phoneNumber", placeholder="Số điện thoại", required)
+
+        .form-group
+            label(for="password")
+            input(type="password", class="username", name="password", placeholder="Mật khẩu", required)
+
+        button.button.button-login-regist(type="submit") Đăng ký
+    .create-acc
+        h3 Bạn đã có tài khoản? 
+        button.button-switch(type="button" id="switchToLoginBtn") Đăng nhập

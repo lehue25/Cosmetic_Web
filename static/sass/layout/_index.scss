@@ -1,0 +1,5 @@
+@use "../abstracts" as abst;
+@forward "./header";
+@forward "./sidebar";
+@forward "./structure";
+@forward "./footer";

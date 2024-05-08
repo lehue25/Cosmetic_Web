@@ -1,0 +1,213 @@
+@use "../../abstracts/" as abst;
+.home {
+  &-wrapper {
+    display: grid;
+    gap: 88px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: auto;
+  }
+  &-content {
+    display: flex;
+    gap: 37px;
+    &-right {
+      & > img {
+        background-color: abst.$pink2;
+        border-radius: 96px 0px 37px 0px;
+        padding: 55px 8px 0 20px;
+      }
+    }
+    &-left {
+      font-size: 20px;
+      font-weight: 500;
+      margin: auto;
+      display: grid;
+      gap: 22px;
+    }
+    &-direct {
+      display: flex;
+      gap: 38px;
+    }
+  }
+}
+.banner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.button-second {
+  background-color: abst.$pink2;
+}
+.home {
+  &-condition-skin {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    animation: mymove 5s 3;
+  }
+
+  @keyframes mymove {
+    from {
+      left: -50px;
+    }
+    to {
+      left: 50px;
+    }
+  }
+  &-condition {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-weight: 650;
+    font-size: 20px;
+    color: abst.$gray4;
+  }
+}
+.explore {
+  &-home {
+    display: grid;
+    gap: 40px;
+    & > h3 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  &-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+}
+.menu-item-explore {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.forU-home {
+  display: grid;
+  gap: 40px;
+  & > h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.explore-forU {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+  background-color: #fff;
+}
+.menu {
+  &-labels {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &-label-hot {
+    background: #af393d;
+    border-radius: 30px;
+    color: #fff;
+    padding: 4px 6px 4px 2px;
+    font-size: 12px;
+  }
+  &-label-freeship {
+    background: #40a43e;
+    border-radius: 30px;
+    color: #fff;
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+  &-item {
+    &-forU {
+      background-color: #fff;
+      display: grid;
+      gap: 14px;
+      padding: 2px;
+      transition: 0.2s;
+      border-radius: 10px;
+      & > img {
+        margin: auto;
+        width: 183px;
+      }
+      &:hover {
+        scale: 1.04;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+    &-detail,
+    &-quality {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 4px;
+    }
+    &-des {
+      font-size: 16px;
+      font-weight: 600;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-price {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &-discount {
+      font-size: 20px;
+      font-weight: medium;
+    }
+    &-discount {
+      font-size: 12px;
+      font-weight: semibold;
+      color: abst.$red1;
+      background-color: abst.$gray2;
+      border-radius: 100px;
+      padding: 4px;
+    }
+  }
+}
+.trending-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.menu-item-trending {
+  padding: 3px 3px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  padding: 0 10px 5px;
+  & > img {
+    max-width: 183px;
+    height: 100%;
+    margin-top: 10px;
+  }
+}
+.trending-home {
+  display: grid;
+  gap: 40px;
+  & > h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.menu-icon {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  margin: auto;
+  width: 214px;
+}
+.gap35 {
+  gap: 35px;
+  display: flex;
+}

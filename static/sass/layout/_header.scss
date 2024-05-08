@@ -1,0 +1,98 @@
+@use "../abstracts" as abst;
+.topheader {
+  background: linear-gradient(45deg, #fcfafa, abst.$pink2, abst.$pink3);
+  display: flex;
+  gap: 254px;
+  padding: 0px 96px;
+  justify-content: space-between;
+}
+.right-header {
+  display: flex;
+  gap: 39px;
+  padding: 34px 0px;
+  align-items: center;
+}
+form {
+  position: relative;
+}
+input {
+  padding: 12px 22px;
+  /* border: 1px solid #ccc; */
+  border-radius: 100px;
+  outline: none;
+  width: 658px;
+  cursor: pointer;
+}
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 30px;
+}
+.name {
+  font-family: "Leckerli One", sans-serif;
+  font-size: 22px;
+  color: #af393d;
+  white-space: nowrap;
+}
+.logo {
+  display: grid;
+  justify-items: center;
+}
+.pages {
+  font-size: 24px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 116px;
+  justify-items: end;
+  font-weight: 500;
+  & > a {
+    border-bottom: 2px solid #ffffff;
+  }
+  & > a:hover {
+    border-bottom: 2px solid abst.$pink0;
+  }
+  & > a:active {
+    border-bottom: 2px solid abst.$pink0;
+  }
+}
+.hotline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #a6a7b2;
+  & > img {
+    width: 25px;
+  }
+  &:hover {
+    font-weight: bold;
+    color: #000;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 38px 0px;
+  gap: 150px;
+}
+.right-header {
+  line-height: 1;
+}
+.header-action {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  color: #fff;
+  & > img {
+    border-radius: 100%;
+  }
+}
+a.header-action:hover {
+  color: #fff;
+  font-weight: 500;
+}

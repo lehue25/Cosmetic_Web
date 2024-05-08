@@ -1,0 +1,10 @@
+extends ./views/layout/_dashboard
+append stylesheet 
+block title
+    title Shifiny - ProductDetail
+block main
+    .home-wrapper.no-b-sh
+        .detail 
+            +itemDetail()
+        include ./views/module/_login
+        include ./views/module/_register

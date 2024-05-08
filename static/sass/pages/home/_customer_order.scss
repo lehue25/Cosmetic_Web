@@ -1,0 +1,24 @@
+@use "../../abstracts/" as abst;
+.ctm-order {
+  display: grid;
+  row-gap: 32px;
+}
+.home-wrapper-orders {
+  width: 880px;
+}
+.button-detail-order {
+  position: absolute !important;
+  right: 17%;
+}
+.orders {
+  padding-bottom: 20px;
+  border-bottom: 1px solid abst.$gray3;
+}
+.orders:last-child {
+  border-bottom: none;
+}
+.order-details {
+  font-size: 16px;
+  padding-left: 20px;
+  color: abst.$gray4;
+}

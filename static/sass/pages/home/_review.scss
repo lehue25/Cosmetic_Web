@@ -1,0 +1,146 @@
+@use "../../abstracts/" as abst;
+.host {
+  &-heading {
+    font-size: 16px;
+  }
+  &-item {
+    @include abst.flexbox(center, center, 5px, column);
+  }
+  &-name {
+    font-size: 14px;
+    color: abst.$gray3;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-avt {
+    @include abst.size(70px);
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+
+    position: relative;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #dddd;
+    img {
+      z-index: 1;
+      position: relative;
+    }
+  }
+}
+
+.trending {
+  &-banner {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
+    max-width: 332px;
+    z-index: 1;
+  }
+  &-circle {
+    position: absolute;
+    bottom: -5px;
+    left: 350px;
+  }
+
+  &-header {
+    display: flex;
+    gap: 11px;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: 1.45;
+    margin-bottom: 11px;
+  }
+  &-podcast {
+    color: #676a6f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    margin-bottom: 4px;
+  }
+  &-author {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: #676a6f;
+    margin-bottom: 20px;
+    &-position {
+      color: #676a6f;
+    }
+  }
+}
+.review {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  &-top {
+    @include abst.flexbox(center, space-between);
+    padding-bottom: 12px;
+    &-left,
+    &-right {
+      @include abst.flexbox(center, center, 16px);
+    }
+  }
+  &-main {
+    @include abst.flexbox(flex-start, flex-start, 30px);
+    position: relative;
+    width: 800px;
+  }
+  &-content {
+    @include abst.flexbox(start, center, 5px, column);
+    &-times {
+      @include abst.flexbox(center, center, 5px);
+    }
+    &-brief {
+      padding-bottom: 48px;
+      font-size: 14px;
+    }
+    & > button {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+  &-img {
+    @include abst.size(158px);
+    width: 125px;
+    border-radius: 10px;
+  }
+  &-name,
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &-time,
+  &-content-time {
+    font-size: 14px;
+    color: abst.$gray5;
+  }
+}
+.reviewPost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 2px solid #f0f3f6;
+  padding-bottom: 20px;
+  border: 1px solid abst.$blue-gray;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.review-content-main {
+  text-align: justify;
+  white-space: break-spaces;
+  color: abst.$gray4;
+}

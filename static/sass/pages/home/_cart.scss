@@ -1,0 +1,133 @@
+@use "../../abstracts/" as abst;
+.cart {
+  &-des {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid abst.$gray1;
+    border-top: 1px solid abst.$gray1;
+  }
+  &-adjust-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & > button {
+      padding: 02px 10px;
+    }
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &-item-details {
+    display: flex;
+    gap: 20px;
+    & > img {
+      width: 100px;
+    }
+  }
+}
+.cart-title-column {
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+.cart-title-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total-price {
+  padding: 20px 0px;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+form#delivery {
+  /* background: #ccc; */
+  display: grid;
+  gap: 10px;
+  & > label {
+    & > p {
+      font-size: 16px;
+      font-weight: 600;
+      color: abst.$text-gray-color;
+      margin-bottom: 5px;
+    }
+  }
+}
+input.delivery-input {
+  background-color: #efefef4d;
+  border-radius: 0px;
+}
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  width: 657px;
+
+  input {
+    width: auto;
+  }
+  label {
+    margin: 0px;
+    font-weight: 700;
+  }
+  img {
+    width: 40px;
+  }
+}
+.button-complete {
+  margin: auto;
+}
+#orderForm {
+  margin: auto;
+  gap: 28px;
+  display: grid;
+}
+input.decrease,
+input.add {
+  width: 20px;
+  display: flex;
+  border-radius: 0px;
+  justify-content: center;
+  padding: 6px 17px;
+}
+input#quantityInput {
+  width: 33px;
+  background: none;
+  padding: 0;
+  text-align: center;
+  margin-left: 10px;
+}
+.border-0 > input {
+  width: 35px;
+  text-align: center;
+  padding: 0px;
+}
+
+button.update-button.button {
+  font-size: 13px;
+  padding: 4px;
+}
+.table > :not(caption) > * > * {
+  padding: 0.5rem 1rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+.table > thead {
+  vertical-align: middle;
+}
+.border-0 > form > input {
+  width: 35px;
+  text-align: center;
+  padding: 0px;
+}

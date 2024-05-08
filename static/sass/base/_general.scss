@@ -1,0 +1,41 @@
+@use "../abstracts/" as abst;
+.justify-content-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.cl-g-40 {
+  column-gap: 40px;
+}
+.bg-red {
+  background: linear-gradient(45deg, #af393d, #af393d, #af393d) !important;
+}
+.hover-white:hover {
+  color: white !important;
+}
+.no-box-shadow {
+  box-shadow: none !important;
+}
+.mg-tl-0 {
+  margin-top: 0;
+  margin-left: 0;
+}
+.flex-flex-start {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 30px;
+}
+.text-align {
+  text-align: center;
+}
+.mgt28 {
+  margin-top: 28px;
+}
+.vertical-align {
+  vertical-align: middle;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.font-weight-normal {
+  font-weight: normal;
+}

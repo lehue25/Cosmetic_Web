@@ -1,0 +1,214 @@
+@use "../../abstracts/" as abst;
+.sidebar {
+}
+.detail {
+  background-color: #f5f5f5;
+  padding: 29px 43px 140px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  &-top {
+    display: flex;
+    gap: 47px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid abst.$gray2;
+  }
+  &-left {
+    display: grid;
+    gap: 12px;
+  }
+  &-options {
+    display: flex;
+    gap: 26px;
+    font-size: 20px;
+    & > li {
+      padding: 6px 16px;
+      background-color: abst.$blue-gray;
+      &:hover {
+        background-color: abst.$pink-primary;
+      }
+    }
+  }
+  &-des {
+    font-size: 20px;
+    color: abst.$gray4;
+  }
+  &-choose {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &-price {
+    font-size: 24px;
+    font-weight: 600;
+    & > .menu-item-price {
+      justify-content: flex-start;
+      font-size: 22px;
+    }
+  }
+  &-more {
+    display: flex;
+    gap: 36px;
+    font-size: 16px;
+    font-weight: 550;
+    color: abst.$gray4;
+    line-height: 1.6;
+    padding-top: 30px;
+    &-img {
+      width: 300px;
+    }
+    &-right {
+    }
+  }
+}
+.menu-item-bottom {
+  display: grid;
+  gap: 16px;
+}
+.img-detail {
+  width: 360px;
+  height: 100%;
+}
+.detail-more-left {
+  white-space: break-spaces;
+}
+.menu-item-sold {
+  font-weight: 600;
+}
+.review-form > textarea {
+  resize: vertical;
+  width: 100%;
+  border: 1px solid #76767545;
+  align-content: flex-start;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 10px 0 0 0;
+  border-radius: 8px;
+}
+/* Reset CSS */
+/* Container styling */
+.input-rating {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Star container */
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px; /* Display stars horizontally */
+}
+
+/* Individual star */
+.stars input {
+  display: none; /* Hide the radio inputs */
+}
+
+.stars label {
+  cursor: pointer;
+  color: #ccc; /* Default star color */
+  padding: 0 5px;
+  margin-bottom: 0em;
+}
+
+/* Styling for unchecked stars */
+.stars label::before {
+  content: "\2606"; /* Unicode character for empty star */
+}
+
+/* Styling for checked stars */
+.stars input:checked ~ label:before {
+  content: "\2605"; /* Unicode character for filled star */
+  color: #fdd835; /* Color of filled star */
+}
+
+/* Hover effect */
+.stars label:hover:before,
+.stars label:hover ~ label:before {
+  color: #fdd835; /* Change color on hover */
+}
+
+/* Accessibility: Focus state */
+.stars input:focus ~ label:before {
+  color: #fdd835; /* Change color when focused */
+}
+.review-form > button {
+  margin: auto;
+}
+form#reviewForm {
+  display: grid;
+  row-gap: 20px;
+  padding-bottom: 88px;
+}
+
+textarea.input:focus-visible {
+  outline: none; /* Loại bỏ đường viền mặc định */
+  border: 1px solid #76767545;
+  /* Loại bỏ border */
+  /* Thêm các thuộc tính khác nếu cần */
+}
+.reviews {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.reviews h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.reviews .rating {
+  font-size: 24px;
+}
+
+.reviews .rating .star {
+  color: gold;
+}
+
+.reviews .time {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+.top-review {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 16fr 4fr;
+  padding-bottom: 12px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #fcfafa, #ef8b90, #cd7583);
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #fff;
+}
+.reviews-inf {
+  font-size: 18px;
+}
+p.text-review {
+  padding-left: 58px;
+}
+.bottom-prod-details {
+  // display: grid;
+  // grid-template-columns: 3fr 1fr;
+  // justify-items: center;
+}
+.relate-img {
+  width: 216px;
+  border-radius: 10px;
+}
+.relate-product {
+  margin-bottom: 20px;
+}
+.relate-products {
+  display: flex;
+  justify-content: space-around;
+}
+.detail-more-right {
+  display: grid;
+}

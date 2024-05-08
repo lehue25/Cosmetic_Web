@@ -1,0 +1,60 @@
+@use "../abstracts" as abst;
+.footer {
+  &-container {
+    background: abst.$blue-gray;
+    padding: 100px 170px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-items: center;
+    font-size: 16px;
+  }
+  &-support,
+  &-aboutus,
+  &-brand {
+    & > ul {
+      display: grid;
+      grid-auto-flow: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    & > h3 {
+      padding-bottom: 53px;
+      font-weight: 700;
+    }
+  }
+  &-brand {
+    @include abst.grid();
+    & > ul {
+      justify-items: center;
+      font-weight: 600;
+    }
+  }
+}
+.policy {
+  display: flex;
+  gap: 22px;
+  padding: 20px;
+  & > ul {
+    @include abst.grid(end);
+    white-space: nowrap;
+    text-transform: uppercase;
+    & > a {
+      color: abst.$pink-primary;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+  & > img {
+    background: #e5e5e5;
+    padding: 3px 13px;
+    border-radius: 6px;
+  }
+}
+.social {
+  & > ul {
+    display: flex;
+    gap: 42px;
+  }
+}

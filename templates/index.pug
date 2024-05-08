@@ -1,0 +1,61 @@
+extends ./views/layout/_dashboard
+append stylesheet
+
+block title
+    title Shifiny - Homepage
+block main
+    include ./views/layout/_sidebar
+    .home-wrapper
+        img(src="../static/images/home/banner.png").banner
+        .home-content 
+            .home-content-left
+                p Shifiny là hệ thống phân phối mỹ phẩm chính hãng uy tín và dịch vụ chăm sóc khách hàng tận tâm . Đến với chúng tôi bạn có thể hoàn toàn yên tâm khi sẽ chọn được cho mình bộ sản phẩm phù hợp và ưng ý từ các nhãn hàng nổi tiếng trên toàn thế giới.
+                .home-content-direct
+                    button.button Mua sắm 
+                    button.button.button-second Chi tiết
+            .home-content-right
+                img(src="../static/images/home/girl.png", alt="girl")
+        .home-condition-skin
+            .home-condition
+                img(src="../static/images/home/icon.png").icon
+                p Da mụn
+            .home-condition
+                img(src="../static/images/home/icon.png").icon
+                p Da khô
+            .home-condition
+                img(src="../static/images/home/icon.png").icon
+                p Da dầu
+            .home-condition
+                img(src="../static/images/home/icon.png").icon
+                p Da lão hóa
+        .explore-home
+            h3 Khám phá
+            .explore-menu
+                +menuItem()
+                +menuItem('../static/images/home/item2.png','#',"Son")
+                +menuItem('../static/images/home/item3.png','#',"Tẩy trang")
+                +menuItem('../static/images/home/item4.png','#',"Dưỡng môi")
+                +menuItem()
+                +menuItem('../static/images/home/item2.png','#',"Son")
+                +menuItem('../static/images/home/item3.png','#',"Tẩy trang")
+                +menuItem('../static/images/home/item4.png','#',"Dưỡng môi")
+        .forU-home
+            h3 Dành cho bạn
+            .explore-forU
+                +menuItemForU()
+                +menuItemForU()
+                +menuItemForU()
+                +menuItemForU()
+        .trending-home
+            h3 Nổi bật
+            .trending-items
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+                +menuItemTrending()
+        include ./views/module/_login
+        include ./views/module/_register

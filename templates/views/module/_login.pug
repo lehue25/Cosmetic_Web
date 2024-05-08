@@ -1,0 +1,19 @@
+
+// Modal Đăng nhập
+#loginModal.modal
+  // Nội dung modal
+  .modal-content
+    i.fa.fa-times(aria-hidden="true").close
+    h2.label-name Đăng nhập
+    form#loginForm
+      .form-group
+        label(for="username")
+        input(type="text", class="username", name="username", placeholder="Tên đăng nhập" required)
+      .form-group
+        label(for="password")
+        input(type="password", class="username", name="username", placeholder="Mật khẩu" required)
+        a.forgot-pass Bạn quên mật khẩu?
+      button.button.button-login-regist(type="submit") Đăng nhập
+    .create-acc
+        h3 Chưa có tài khoản?
+        button.button-switch Đăng ký

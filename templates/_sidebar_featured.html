@@ -1,0 +1,18 @@
+{% for i in featured%}
+<ul class="recent-list">
+  <li class="recent-new-item">
+    <img class="img-recent" src="{{i[7]}}" alt="" />
+    <a class="recent-new-des" href="product/{{i[18]}}">
+      <p class="recent-new-title">{{i[0]}}</p>
+      <p class="recent-new-time">{{i[1]}}</p>
+    </a>
+  </li>
+</ul>
+
+{% endfor %}
+<style>
+  .img-recent {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+  }
+</style>
